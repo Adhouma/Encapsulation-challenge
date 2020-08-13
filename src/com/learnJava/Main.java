@@ -1,0 +1,25 @@
+package com.learnJava;
+
+public class Main {
+	/**
+	 * Create a class and demonstate proper encapsulation techniques
+	 * the class will be called Printer
+	 * It will simulate a real Computer Printer
+	 * It should have fields for the toner Level, number of pages printed, and also whether its a duplex printer 
+	 * (capable of printing on both sides of the paper).
+	 * Add methods to fill up the toner (up to a maximum of 100%), another method to simulate printing a page
+	 * (which should increase the number of pages printed).
+	 * Decide on the scope, whether to use constructors, and anything else you think is needed.
+	 */
+	public static void main(String[] args) {
+		// tonerLevel, pageNumbers, duplexPrinter
+		Printer printer = new Printer(50, 500, true);
+		
+		printer.filupToner(10);
+		printer.filupToner(50);
+		
+		printer.printPages(20, true);
+		printer.printPages(40, false);
+	}
+
+}
